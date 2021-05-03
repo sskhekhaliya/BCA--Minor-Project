@@ -1,0 +1,335 @@
+* {
+	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	background-color: #fff;
+	font-family: 'Poppins', sans-serif;
+	overflow: hidden;
+	background: url(Images/Background.PNG) no-repeat center center fixed;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+}
+
+.preloader{
+	width: 100vw;
+	height: 100vh;
+	z-index: 1;
+}
+
+.circle {
+	border-radius: 50%;
+	height: 1400px;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 1400px;
+
+}
+
+.circle span:before {
+	color: #ffffff;
+	content: attr(data-text);
+	font-size: 16rem;
+	font-weight: 900;
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.circle span {
+	-webkit-animation: animate 5s cubic-bezier(0.64, -0.56, 0.36, 1.56) infinite;
+	        animation: animate 5s cubic-bezier(0.64, -0.56, 0.36, 1.56) infinite;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);;
+	border-radius: 50%;
+	display: block;
+	overflow: hidden;
+	position: absolute;
+}
+
+.circle span:after {
+	border-radius: 50%;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5) inset,
+							0 0 75px rgba(0, 0, 0, 0.5) inset,
+							0 0 100px rgba(0, 0, 0, 0.5) inset,
+							0 0 125px rgba(0, 0, 0, 0.5) inset;
+	content: '';
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.circle span:nth-child(1) {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+.circle span:nth-child(2) {
+	-webkit-animation-delay: 0.2s;
+	        animation-delay: 0.2s;
+	bottom: 150px;
+	left: 150px;
+	right: 150px;
+	top: 150px;
+}
+
+.circle span:nth-child(3) {
+	-webkit-animation-delay: 0.4s;
+	        animation-delay: 0.4s;
+	bottom: 300px;
+	left: 300px;
+	right: 300px;
+	top: 300px;
+}
+
+.circle span:nth-child(4) {
+	-webkit-animation-delay: 0.6s;
+	        animation-delay: 0.6s;
+	bottom: 450px;
+	left: 450px;
+	right: 450px;
+	top: 450px;
+}
+
+.circle span:nth-child(5) {
+	-webkit-animation-delay: 0.8s;
+	        animation-delay: 0.8s;
+	bottom: 600px;
+	left: 600px;
+	right: 600px;
+	top: 600px;
+}
+
+@-webkit-keyframes animate {
+	80%,
+	100% {
+		transform: rotateZ(1turn);
+	}
+}
+
+@keyframes animate {
+	80%,
+	100% {
+		transform: rotateZ(1turn);
+	}
+}
+
+
+.Simon-title{
+	width: 600px;
+	    height: 162px;
+	    background-color: #4C4660;
+	    border: 4px solid #FF4571;
+	    border-radius: 68px;
+	margin: 10% auto auto auto;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap");
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+	margin: 20px 40px;
+}
+.wrapper p {
+  font-size: 100px;
+  font-family: 'Press Start 2P', cursive;
+  transform: scale(0.9, 1) rotatey(-10deg) translatey(0px);
+  animation: 2.2s scaling cubic-bezier(0.45, 0, 0.55, 1) infinite;
+  text-shadow: 0 0 #e8332e, 0 0 #fc9e05, 0 0 #891696;
+  transform-origin: 50% 100%;
+  color: #fff;
+  position: relative;
+  top: 10%;
+  transform-style: preserve-3d;
+  margin-right: 4px;
+}
+.wrapper p:nth-child(1) {
+  animation-delay: 140ms;
+}
+.wrapper p:nth-child(2) {
+  animation-delay: 280ms;
+}
+.wrapper p:nth-child(3) {
+  animation-delay: 420ms;
+}
+.wrapper p:nth-child(4) {
+  animation-delay: 560ms;
+}
+.wrapper p:nth-child(5) {
+  animation-delay: 700ms;
+}
+
+@keyframes scaling {
+  20% {
+    text-shadow: 0px 0 #e8332e, 0px 0 #fc9e05, 0px 0 #891696;
+    transform: scale(0.9, 1) rotatey(-10deg);
+  }
+  40% {
+    transform: scale(0.9, 2) translatey(16px);
+    text-shadow: -10px 0px #e8332e, -20px 0 #fc9e05, -30px 0 #891696;
+  }
+  60% {
+    transform: scale(0.9, 1) rotatey(-5deg);
+    text-shadow: 0px 0 #e8332e, 0px 0 #fc9e05, 0px 0 #891696;
+  }
+  80% {
+    transform: scale(0.9, 2) translatey(16px);
+    text-shadow: 10px 0px #e8332e, 20px 0 #fc9e05, 30px 0 #891696;
+  }
+}
+@keyframes jump {
+  20% {
+    transform: translatey(0) scale(0);
+    opacity: 0;
+  }
+  40% {
+    transform: translatey(-50px) scale(1);
+    opacity: 1;
+  }
+  60% {
+    transform: translatey(0) scale(0);
+    opacity: 0;
+  }
+  80% {
+    transform: translatey(-50px) scale(1);
+    opacity: 1;
+  }
+}
+
+.backdrop{
+	margin-top: 100px;
+    margin-left: 47%;
+    margin-right: auto;
+}
+
+.play-btn {
+  width:84px;
+	z-index: -1;
+  height:84px;
+  transition: all .3s;
+    background-image: linear-gradient(to right,#e7174d 0,#b82b7b 51%,#e7174d 100%);
+    background-size: 200% auto;
+ position: absolute;
+  transform:translateY(-50%);
+  border-radius:50%;
+  line-height:94px;
+  text-align:center;
+  transition: .3s ease-in-out;
+}
+.play-btn:hover {
+  box-shadow:0 10px 30px #111;
+    transition: .3s ease-in-out;
+  background-image: linear-gradient(to left,#b82b7b 0,#e7174d 51%,#b82b7b 100%);
+}
+  .play-btn:before {
+    content:"";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 84px;
+    height: 84px;
+    border: 2px solid #fff;
+    border-radius:50%;
+   -webkit-animation:my_zoom 3s linear .5s infinite;animation:my_zoom 3s linear .5s infinite;}
+
+.play-icon {
+  color:#fff;
+  font-size:30px;
+  position:relative;
+  right:-3px;
+
+}
+
+a { text-decoration: none;}
+
+#wrapper-moredetails {
+  width: 100%;
+	z-index: -1;
+  overflow: hidden;
+	position: absolute;
+	bottom: 70px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+#btn-outline {
+   margin: 30px auto 0;
+  width: 210px;
+  height: 40px;
+  display: block;
+}
+
+#btn-outline .shape {
+  stroke-dasharray: 100 310;
+  stroke-dashoffset: -304;
+  stroke-width: 5px;
+  fill: transparent;
+  stroke: #fff;
+  -webkit-transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  -ms-transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+
+#btn-outline .text {
+  top: -43px;
+  position: relative;
+  color: #fff;
+  font-size: 1.5em;
+  letter-spacing: 4px;
+  margin-right: -4px;
+	margin-left: 3%;
+}
+
+ #btn-outline:hover .shape {
+   stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 550;
+}
+
+.no-svg #btn-outline {
+   color: #fff;
+  font-size: 1.7em;
+  line-height: 40px;
+  letter-spacing: 4px;
+  text-indent: 4px;
+  border: 2px solid #fff;
+}
+
+.credit{
+	width: 100vw;
+	    text-align: center;
+	    position: absolute;
+	    bottom: 10px;
+	    color: white;
+	    font-family: 'Press Start 2P';
+	}
+
+	.credit-names{
+		color: beige;
+	}
+
+
+@-webkit-keyframes my_zoom{0%{-webkit-transform:scale(1);transform:scale(1);opacity:.6}100%{-webkit-transform:scale(1.5);transform:scale(1.5);opacity:0}}@keyframes my_zoom{0%{-webkit-transform:scale(1);transform:scale(1);opacity:.6}100%{-webkit-transform:scale(1.5);transform:scale(1.5);opacity:0}}
