@@ -321,7 +321,7 @@ a { text-decoration: none;}
 .credit{
 	width: 100vw;
 	    text-align: center;
-	    position: absolute;
+	    position: fixed;
 	    bottom: 10px;
 	    color: white;
 	    font-family: 'Press Start 2P';
